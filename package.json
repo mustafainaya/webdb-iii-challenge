@@ -2,6 +2,9 @@
 	"name": "webdb-iii-challenge",
 	"version": "1.0.0",
 	"main": "index.js",
+	"scripts": {
+		"server": "nodemon"
+	},
 	"repository": "https://github.com/mustafainaya/webdb-iii-challenge.git",
 	"author": "mustafa inaya <moose.inaya@icloud.com>",
 	"license": "MIT",
