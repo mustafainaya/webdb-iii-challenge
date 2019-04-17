@@ -1,8 +1,9 @@
 //what changes are to be applied to DB
 exports.up = function(knex, Promise) {
-	return knex.schema.createTable('lambda', function(table) {
+	return knex.schema.createTable('cohorts', function(table) {
 		table.increments();
 		table.string('name', 128).notNullable().unique();
+		table.timestamps(true, true);
 	});
 };
 

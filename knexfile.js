@@ -7,7 +7,7 @@ module.exports = {
 			filename: './data/lambda.sqlite3'
 		},
 		useNullAsDefault: true
-	}
+	},
 
 	//   staging: {
 	//     client: 'postgresql',
@@ -36,8 +36,11 @@ module.exports = {
 	//       min: 2,
 	//       max: 10
 	//     },
-	//     migrations: {
-	//       tableName: 'knex_migrations'
-	//     }
+	migrations: {
+		directory: './migrations'
+	},
+	seeds: {
+		directory: './seeds'
+	}
 	//   }
 };
